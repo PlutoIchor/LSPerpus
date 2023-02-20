@@ -1,0 +1,130 @@
+* {
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: gray;
+}
+
+hr {
+    background-color: gray;
+}
+
+sup {
+    background-color: gray;
+    border-radius: 50%;
+    background-size: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+.left-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    background-color: #032a3b;
+    z-index : 1;
+}
+
+.top-bar {
+    display : flex;
+    height : 5%;
+    width : 85%;
+    margin-left : 15%;
+    position: fixed;
+    background-color : #2952a3;
+
+    z-index : 1;
+}
+
+.nav-type,
+.nav-con {
+    padding-left: 10px;
+}
+
+.nav-type {
+    background-color: gray;
+}
+
+.nav-con a {
+    position: absolute;
+    left: 30px;
+    text-decoration: none;
+}
+
+.list-nav li {
+    margin-bottom: 20px;
+}
+
+.content-nav ul {
+    padding: 0;
+    position: relative;
+}
+
+.content-nav a {
+    padding-left: 10px;
+    color: white;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    flex: 17;
+    height: 100%;
+    margin-left : 15%;
+}
+
+.logout p {
+    text-align: center;
+}
+
+.edit,
+.delete {
+    border: none;
+}
+
+.edit:hover,
+.delete:hover {
+    background-color: white;
+    color: black;
+}
+
+.edit {
+    background-color: orange;
+}
+
+.delete {
+    background-color: rgb(180, 42, 42);
+}
+
+.nama_siswa:hover {
+    color: #17a2b8;
+}
+.row_siswa:active,
+.row_jadwal:active {
+    background-color: rgb(229, 229, 229);
+}
+
+.logout_button:hover ~ .logout_button a,
+.logout_button i {
+    color: green;
+}
+
+.bukus {
+    width : 105%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
